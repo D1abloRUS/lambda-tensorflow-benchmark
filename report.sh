@@ -43,7 +43,6 @@ DATA_MODE=(
 
 PRECISION=(
   fp32
-  fp16
 )
 
 declare -A BATCH_SIZES=(
