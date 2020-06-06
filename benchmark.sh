@@ -107,9 +107,6 @@ run_benchmark() {
   if $distortions; then
     output+="-distortions"
   fi
-  if [ $precision = fp16 ]; then
-    args+=("--use_fp16=True")
-  fi
   output+="-${num_gpus}gpus-${batch_size}-${iter}.log"
 
   mkdir -p "${LOG_DIR}" || true
